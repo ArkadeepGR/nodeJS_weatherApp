@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Weather App - Help</title>
+        <style>
+        h1{
+    color:blue;
+    margin:0px;
+    padding:5px;
+}
+body{
+    margin:0px;
+    padding:0px;
+    background-color:ghostwhite;
+}
+.head{
+    color:grey;
+    padding:0px;
+    margin:0px auto;
+    width:100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #EEEEEE;
+    border-bottom:1px solid gray;
+    height:15%;
+    border-radius:20px 0px 0px 0px;
+}
+.box{
+    padding:0px;
+    margin:0px auto;
+    width:50%;
+    height:90%;
+    margin-top:10px;
+    box-shadow: 6px 6px 5px black;
+     border-radius:20px 0px 0px 0px;
+    
+}
+a{
+    text-decoration:none;
+    color: black;
+    padding-left:5px;
+    margin:0px;
+}
+
+.main{
+    padding:0px;
+    margin:0px auto;
+    width:100%;
+    background-color:#B5E5FF;
+    height:83%;
+    
+}
+.foot{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0px auto;
+    width:max-content;
+    
+     
+}
+p{
+    margin:0px;
+    padding:5px;
+}
+.base{
+    background-color: #EEEEEE;
+}
+        </style>
+    </head>
+    <body>
+        <div class="box">
+        <div class='head'>
+        {{>header}}
+        </div>
+        <div class="main">
+        <p>{{content}}</p>
+        </div>
+        <div class='base'>
+        <div class='foot'>
+        {{>footer}}
+        </div>
+        </div>
+        </div>
+    </body>
+</html>   
