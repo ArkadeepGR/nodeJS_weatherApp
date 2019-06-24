@@ -10,7 +10,10 @@ const forecast=(lat,lon,callback)=>{
         else
             {
               callback(undefined,{  
+                summary:response.body.currently.summary,
                 temp:response.body.currently.temperature,
+                windspeed:response.body.currently.windSpeed,
+                humidity:response.body.currently.humidity,
                 rainPorbability:response.body.currently.precipProbability
               })
             }

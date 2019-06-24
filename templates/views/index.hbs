@@ -95,7 +95,9 @@ p{
                     console.log(data)
                     if(!data.error){
                     result.innerHTML="<b>Location:</b> "+data.location+"<br>"
-                    result.innerHTML = result.innerHTML+"<b>Temperature:</b> "+data.forecast.temp+"<br><b>Rain probability:</b> "+data.forecast.rainPorbability
+                    result.innerHTML = result.innerHTML+"<b>Summary:</b> "+data.forecast.summary+"<br><b>Rain probability:</b> "+data.forecast.rainPorbability+"<br>"
+                    result.innerHTML = result.innerHTML+"<b>Temperature:</b> "+data.forecast.temp+"<br><b>Humidity:</b> "+data.forecast.humidity+"<br>"
+                    result.innerHTML = result.innerHTML+"<b>Wind Speed:</b> "+data.forecast.windspeed
                     }
                     else
                          result.innerHTML="<b>"+data.error+"</b>"
