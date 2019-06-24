@@ -6,6 +6,7 @@ const app=express()
 const hbs=require('hbs')
 const path=require('path')
 
+const port=process.env.PORT || 3000
 const pathViews=path.join(__dirname,'../templates/views')
 const pathPartial=path.join(__dirname,'../templates/partials')
 
@@ -105,6 +106,6 @@ app.get('/weather',(req,res)=>{
     res.send('Show weather.')
 })
 */
-app.listen(3000,()=>{
-    console.log('Server is up in port 3000.')
+app.listen(port,()=>{
+    console.log('Server is up in port '+port+'.')
 })

@@ -89,8 +89,8 @@ p{
             var add=document.getElementById('address')
             var result=document.getElementById('result')
            butt.onclick = function(){
-            //
-                fetch('http://localhost:3000/weather?address='+add.value).then((response)=>{
+            
+                fetch('/weather?address='+add.value).then((response)=>{
                 response.json().then((data)=>{
                     console.log(data)
                     if(!data.error){
@@ -101,7 +101,7 @@ p{
                          result.innerHTML="<b>"+data.error+"</b>"
                 })
             })
-            //
+            
            };
         </script>
     </body>
